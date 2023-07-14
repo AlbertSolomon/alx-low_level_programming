@@ -17,11 +17,9 @@ int main(void)
 
 	if (n > 0)
 		printf("%d is_positive", n);
-
-	if (n < 0)
+	else if (n < 0)
 		printf("%d is_negative\n", n);
-
-	if (n == 0)
+	else
 		printf("%d is_zero\n", n);
 
 	return (0);
