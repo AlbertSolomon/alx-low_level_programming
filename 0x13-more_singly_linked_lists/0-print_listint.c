@@ -12,9 +12,6 @@ size_t print_listint(const listint_t *h)
 {
 	unsigned int len = 0;
 
-	if (h == NULL)
-		printf("The list is empty");
-
 	while (h != NULL)
 	{
 		len++;
