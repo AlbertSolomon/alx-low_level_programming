@@ -1,8 +1,9 @@
-#include "lists.h"
 #include <stdio.h>
+#include "lists.h"
+
 /**
  * find_listint_loop - finds address of starting node in looped linked list
- * @head: pointer to the head in linked list to test
+ * @head: pointer to the head in linked list to conduct a test
  *
  * Return: The address of the node where the loop starts,
  * or NULL if there is no loop
