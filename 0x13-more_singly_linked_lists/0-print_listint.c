@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stddef.h>
-#include "list.h"
+#include "lists.h"
 
 /**
  * print_listint - prints the whole singly linked list

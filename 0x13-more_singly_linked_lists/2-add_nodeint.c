@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "list.h"
+#include "lists.h"
 
 /**
  * add_nodeint - Adds a node at the beginning of a singly linked list

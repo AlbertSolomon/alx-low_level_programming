@@ -1,2 +1,5 @@
 tmp.c
+a
 a.out
+0-main.*
+*main.c
