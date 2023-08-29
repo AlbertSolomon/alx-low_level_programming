@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "list.h"
+#include "lists.h"
 
 /**
  * listint_len - prints the length of the singly linked list
