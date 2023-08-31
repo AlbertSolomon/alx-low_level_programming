@@ -1,23 +1,44 @@
-#include <stdio.h>
-#include "main.h"
+#include "holberton.h"
+
 /**
- * binary_to_uint - function that converts binary number to unsigned int
- * @b: pointer to the provided prompt containing binary number
+ * rev_bin - prints binary representation of number with & and Shift Right
+ * operators, but uses recursion to reverse the result
  *
- * Return: the number that had been converted
+ * @n: decimal number
+ * @check: checks for special case number 0
+ *
+ * Return: No return
  */
-unsigned int binary_to_uint(const char *b);
+void rev_bin(unsigned long int n, int check)
 {
-	unsigned int decimal_val = 0;
-
-	if (!b)
-		return (0);
-	for (int n = 0; b[n]; n++)
+	if (check == 1)
 	{
-		if (b[n] < '0' || b[n] > '1')
-			return (0);
-
-		decimal_val = 2 * decimal_val + (b[n] - '0');
+		_putchar('0');
+		return;
 	}
-	return (decimal_val);
+
+	if (n == 0)
+		return;
+
+	rev_bin(n >> 1, check);
+
+	if ((n & 1) == 0)
+		_putchar('0');
+
+	if ((n & 1) == 1)
+		_putchar('1');
+}
+/**
+ * print_binary - prints the binary representation of a number
+ * @n: base 10 number
+ *
+ * Return: No return
+ *
+ */
+void print_binary(unsigned long int n)
+{
+	if (n == 0)
+		rev_bin(n, 1);
+	else
+		rev_bin(n, 0);
 }
